@@ -11,18 +11,7 @@ category: 04-Resources/languages
 ### 1️⃣ Design Level → Tactical Flow
 
 ```mermaid
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#f0f9ff',
-    'primaryTextColor': '#0c4a6e',
-    'primaryBorderColor': '#0ea5e9',
-    'lineColor': '#64748b',
-    'secondaryColor': '#fef3c7',
-    'tertiaryColor': '#e0f2fe',
-    'background': '#ffffff'
-  }
-}}%%
+
 graph TD
     DL[Design Level Event Storming<br/>Aggregates + Microservices Defined]
     TD[Tactical Design<br/>Convert to Code]
@@ -47,18 +36,7 @@ graph TD
 ### 2️⃣ Aggregate Class Model Example
 
 ```mermaid
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#fefce8',
-    'primaryTextColor': '#713f12',
-    'primaryBorderColor': '#f59e0b',
-    'lineColor': '#78716c',
-    'secondaryColor': '#fff7ed',
-    'tertiaryColor': '#fef9c3',
-    'background': '#ffffff'
-  }
-}}%%
+
 classDiagram
     class OrderAggregate {
         +orderId: String
@@ -105,18 +83,7 @@ classDiagram
 ### 3️⃣ Clean Architecture Structure
 
 ```mermaid
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#faf5ff',
-    'primaryTextColor': '#581c87',
-    'primaryBorderColor': '#9333ea',
-    'lineColor': '#71717a',
-    'secondaryColor': '#fff7ed',
-    'tertiaryColor': '#f3e8ff',
-    'background': '#ffffff'
-  }
-}}%%
+
 graph TD
     subgraph DOMAIN["Domain Layer (Core)"]
         direction TB
@@ -161,18 +128,7 @@ graph TD
 ### 4️⃣ Entity vs Value Object
 
 ```mermaid
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#f8fafc',
-    'primaryTextColor': '#0f172a',
-    'primaryBorderColor': '#3b82f6',
-    'lineColor': '#64748b',
-    'secondaryColor': '#fefce8',
-    'tertiaryColor': '#eff6ff',
-    'background': '#ffffff'
-  }
-}}%%
+
 graph LR
     subgraph ENTITY["Entity"]
         E1[Has Identity]

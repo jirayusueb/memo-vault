@@ -6,19 +6,7 @@ date: 2026-02-15
 category: 04-Resources/languages
 
 
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#f8fafc',
-    'primaryTextColor': '#0f172a',
-    'primaryBorderColor': '#3b82f6',
-    'lineColor': '#64748b',
-    'secondaryColor': '#fefce8',
-    'tertiaryColor': '#eff6ff',
-    'background': '#ffffff',
-    'fontSize': '14px'
-  }
-}}%%
+
 
 ```mermaid
 graph TD
@@ -60,18 +48,7 @@ graph TD
     linkStyle default stroke:#64748b,stroke-width:2px
 ```
 
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#f0f9ff',
-    'primaryTextColor': '#0c4a6e',
-    'primaryBorderColor': '#0ea5e9',
-    'lineColor': '#64748b',
-    'secondaryColor': '#fef3c7',
-    'tertiaryColor': '#e0f2fe',
-    'background': '#ffffff'
-  }
-}}%%
+
 
 ```mermaid
 graph LR
@@ -101,18 +78,7 @@ graph LR
     style P fill:#f1f5f9,stroke:#64748b,stroke-width:1px
 ```
 
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#faf5ff',
-    'primaryTextColor': '#581c87',
-    'primaryBorderColor': '#9333ea',
-    'lineColor': '#71717a',
-    'secondaryColor': '#fff7ed',
-    'tertiaryColor': '#f3e8ff',
-    'background': '#ffffff'
-  }
-}}%%
+
 
 ```mermaid
 mindmap
@@ -141,18 +107,7 @@ mindmap
       Sol4[Facilitator<br/>Intervenes]
 ```
 
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#fefce8',
-    'primaryTextColor': '#713f12',
-    'primaryBorderColor': '#f59e0b',
-    'lineColor': '#78716c',
-    'secondaryColor': '#fff7ed',
-    'tertiaryColor': '#fef9c3',
-    'background': '#ffffff'
-  }
-}}%%
+
 
 ```mermaid
 graph LR

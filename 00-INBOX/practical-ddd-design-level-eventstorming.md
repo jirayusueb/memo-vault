@@ -11,18 +11,7 @@ category: 04-Resources/languages
 ### 1️⃣ Big Picture → Design Level Flow
 
 ```mermaid
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#faf5ff',
-    'primaryTextColor': '#581c87',
-    'primaryBorderColor': '#9333ea',
-    'lineColor': '#71717a',
-    'secondaryColor': '#fef3c7',
-    'tertiaryColor': '#f3e8ff',
-    'background': '#ffffff'
-  }
-}}%%
+
 graph TD
     BP[Big Picture Event Storming<br/>Focus: Current Business Flow]
     DL[Design Level Event Storming<br/>Focus: Model Software System]
@@ -47,18 +36,7 @@ graph TD
 ### 2️⃣ Aggregate Definition Process
 
 ```mermaid
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#fefce8',
-    'primaryTextColor': '#713f12',
-    'primaryBorderColor': '#f59e0b',
-    'lineColor': '#78716c',
-    'secondaryColor': '#fff7ed',
-    'tertiaryColor': '#fef9c3',
-    'background': '#ffffff'
-  }
-}}%%
+
 graph LR
     subgraph INPUT["Big Picture Results"]
         E1[Domain Events]
@@ -100,18 +78,7 @@ graph LR
 ### 3️⃣ Microservice Architecture
 
 ```mermaid
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#f0f9ff',
-    'primaryTextColor': '#0c4a6e',
-    'primaryBorderColor': '#0ea5e9',
-    'lineColor': '#64748b',
-    'secondaryColor': '#fef3c7',
-    'tertiaryColor': '#e0f2fe',
-    'background': '#ffffff'
-  }
-}}%%
+
 graph TD
     subgraph MS1["Microservice 1: Order Service"]
         OA[Order Aggregate]
