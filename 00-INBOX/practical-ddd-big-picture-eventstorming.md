@@ -5,6 +5,26 @@ tags: #ddd #eventstorming #domain-driven-design #workshop
 date: 2026-02-15
 category: 04-Resources/languages
 
+## 🎨 Theme Configuration
+
+> 💡 **Copy theme code ไปใช้ใน Obsidian ได้เลยค่ะ**
+
+\`\`\`yaml
+# Mermaid Custom Theme - Blue & Professional
+theme: base
+themeVariables:
+  primaryColor: "#f8fafc"
+  primaryTextColor: "#0f172a"
+  primaryBorderColor: "#3b82f6"
+  lineColor: "#64748b"
+  secondaryColor: "#fefce8"
+  tertiaryColor: "#eff6ff"
+  background: "#ffffff"
+  fontSize: "14px"
+\`\`\`
+
+---
+
 %%{init: {
   'theme': 'base',
   'themeVariables': {
