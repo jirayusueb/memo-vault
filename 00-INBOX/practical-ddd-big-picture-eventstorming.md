@@ -5,96 +5,303 @@ tags: #ddd #eventstorming #domain-driven-design #workshop
 date: 2026-02-15
 category: 04-Resources/languages
 
-![[attachments/practical-ddd-eventstorming.excalidraw]]
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#f8fafc',
+    'primaryTextColor': '#0f172a',
+    'primaryBorderColor': '#3b82f6',
+    'lineColor': '#64748b',
+    'secondaryColor': '#fefce8',
+    'tertiaryColor': '#eff6ff',
+    'background': '#ffffff',
+    'fontSize': '14px'
+  }
+}}%%
 
 ```mermaid
 graph TD
-    Start([Big Picture Event Storming]) --> P1[Phase 1: Chaotic Exploration]
+    Start([🎯 Big Picture Event Storming]) --> P1[Phase 1:<br/>Chaotic Exploration]
 
-    P1 --> P1Notes[Notes:
-    • Domain Events time-ordered
-    • Add Actors + Systems immediately
-    • Define Domain Event clearly from START
-    • Use Ubiquitous Language
-    • Accept fragmented timeline]
+    P1 --> P1Tips[💡 Tips:<br/>• Add Domain Events + Actors + Systems<br/>  together NOT separately<br/>• Define Domain Event from START<br/>• Use Ubiquitous Language<br/>• Accept fragmented timeline]
 
-    P1 --> P2[Phase 2: Enforcing Timeline]
+    P1 --> P2[Phase 2:<br/>Enforcing Timeline]
 
-    P2 --> P2Notes[Find PIVOTAL EVENTS<br/>Don't overthink]
+    P2 --> P2Tips[🎯 Find PIVOTAL EVENTS<br/>Don't overthink it!]
 
-    P2 --> P3[Phase 3: People & Systems]
+    P2 --> P3[Phase 3:<br/>People & Systems]
 
-    P3 --> P3Notes[Most BUSINESS DISCUSSION<br/>FACILITATOR must cut long discussions<br/>TIMEBOX critical]
+    P3 --> P3Tips[⚠️ CRITICAL:<br/>Most BUSINESS DISCUSSION here<br/>FACILITATOR must cut long talks<br/>TIMEBOX or it drags forever]
 
-    P3 --> P4[Phase 4: Explicit Walkthrough]
+    P3 --> P4[Phase 4:<br/>Explicit Walkthrough]
 
-    P4 --> P4Notes[Narrator explains flow<br/>Verify ALL understand<br/>Add missing events ON THE FLY]
+    P4 --> P4Tips[🗣️ Narrator explains flow<br/>✓ Verify ALL understand<br/>✓ Add missing events ON THE FLY]
 
-    P4 --> P5[Phase 5: Problems & Opportunities]
+    P4 --> P5[Phase 5:<br/>Problems & Opportunities]
 
-    P5 --> P6[Phase 6: Pick Your Problem]
+    P5 --> P6[Phase 6:<br/>Pick Your Problem]
 
-    P6 --> P6Notes[Guide for FUTURE<br/>TO-BE decisions]
+    P6 --> P6Tips[🎯 Guide for FUTURE<br/>TO-BE decisions<br/>Not for this workshop]
 
-    style Start fill:#e1f5ff
-    style P1 fill:#fff3cd
-    style P2 fill:#d4edda
-    style P3 fill:#f8d7da
-    style P4 fill:#d1ecf1
-    style P5 fill:#e2e3e5
-    style P6 fill:#cce5ff
+    style Start fill:#3b82f6,stroke:#1d4ed8,color:#fff,stroke-width:3px
+    style P1 fill:#fefce8,stroke:#eab308,stroke-width:2px
+    style P2 fill:#dcfce7,stroke:#22c55e,stroke-width:2px
+    style P3 fill:#fee2e2,stroke:#ef4444,stroke-width:2px
+    style P4 fill:#dbeafe,stroke:#3b82f6,stroke-width:2px
+    style P5 fill:#f3f4f6,stroke:#6b7280,stroke-width:2px
+    style P6 fill:#e0e7ff,stroke:#6366f1,stroke-width:2px
+    style P1Tips fill:#fffbeb,stroke:#f59e0b,stroke-width:1px
+    style P2Tips fill:#f0fdf4,stroke:#16a34a,stroke-width:1px
+    style P3Tips fill:#fef2f2,stroke:#dc2626,stroke-width:1px
+    style P4Tips fill:#eff6ff,stroke:#2563eb,stroke-width:1px
+    style P6Tips fill:#eef2ff,stroke:#4f46e5,stroke-width:1px
+
+    linkStyle default stroke:#64748b,stroke-width:2px
 ```
+
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#f0f9ff',
+    'primaryTextColor': '#0c4a6e',
+    'primaryBorderColor': '#0ea5e9',
+    'lineColor': '#64748b',
+    'secondaryColor': '#fef3c7',
+    'tertiaryColor': '#e0f2fe',
+    'background': '#ffffff'
+  }
+}}%%
 
 ```mermaid
 graph LR
-    subgraph ROLES["Roles & Responsibilities"]
-        OutBox[OUT-BOX<br/>Methodology]
-        InFight[IN-FIGHT<br/>Business]
+    subgraph ROLES["👥 Roles & Responsibilities"]
+        direction TB
+        OutBox[📋 OUT-BOX<br/>Methodology]
+        InFight[💼 IN-FIGHT<br/>Business]
     end
 
     OutBox --> OutBoxTasks[• Explain rules<br/>• Guide process<br/>• Keep timeboxing<br/>• DDD expert]
     InFight --> InFightTasks[• Know business<br/>• Challenge assumptions<br/>• Validate events<br/>• Domain expert]
 
-    subgraph STICKY["Sticky Notes"]
+    subgraph STICKY["📌 Sticky Notes"]
         D[🟡 Domain Events]
         A[👤 Actors]
         S[🔵 Systems]
-        C[⚪ Commands-Optional]
-        P[🟢 Policies-Optional]
+        C[⚪ Commands<br/>Optional]
+        P[🟢 Policies<br/>Optional]
     end
 
-    style OutBox fill:#e3f2fd
-    style InFight fill:#fff3e0
-    style D fill:#fff9c4
-    style A fill:#c8e6c9
-    style S fill:#bbdefb
+    style OutBox fill:#dbeafe,stroke:#0284c7,stroke-width:2px,color:#0c4a6e
+    style InFight fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#78350f
+    style D fill:#fef08a,stroke:#ca8a04,stroke-width:2px
+    style A fill:#bbf7d0,stroke:#16a34a,stroke-width:2px
+    style S fill:#bfdbfe,stroke:#2563eb,stroke-width:2px
+    style C fill:#f1f5f9,stroke:#64748b,stroke-width:1px
+    style P fill:#f1f5f9,stroke:#64748b,stroke-width:1px
 ```
+
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#faf5ff',
+    'primaryTextColor': '#581c87',
+    'primaryBorderColor': '#9333ea',
+    'lineColor': '#71717a',
+    'secondaryColor': '#fff7ed',
+    'tertiaryColor': '#f3e8ff',
+    'background': '#ffffff'
+  }
+}}%%
 
 ```mermaid
 mindmap
-  root((Big Picture<br/>Event Storming))
-    Phases
-      P1(Phase 1<br/>Chaotic Exploration)
-      P2(Phase 2<br/>Timeline)
-      P3(Phase 3<br/>People & Systems)
-      P4(Phase 4<br/>Walkthrough)
-      P5(Phase 5<br/>Problems)
-      P6(Phase 6<br/>Pick Problem)
-    Roles
-      Facilitator(DDD Expert<br/>Out-Box)
-      Business(Domain Expert<br/>In-Fight)
-      Supporter(Help Facilitator)
-      Narrator(Explain Flow)
-    Pain Points
-      PP1(No Timeboxing)
-      PP2(TO-BE Focus Lost)
-      PP3(Off-Scope)
-      PP4(Wrong Abstraction)
-    Solutions
-      Sol1(Focus Sunny Scenarios)
-      Sol2(Mix TO-BE Flows)
-      Sol3(Use Parking Lot)
-      Sol4(Facilitator Intervenes)
+  root((🎯<br/>Event Storming))
+    Phases[📋 Phases]
+      P1[Phase 1<br/>Chaotic Exploration]
+      P2[Phase 2<br/>Timeline]
+      P3[Phase 3<br/>People & Systems]
+      P4[Phase 4<br/>Walkthrough]
+      P5[Phase 5<br/>Problems]
+      P6[Phase 6<br/>Pick Problem]
+    Roles[👥 Roles]
+      Facilitator[DDD Expert<br/>Out-Box]
+      Business[Domain Expert<br/>In-Fight]
+      Supporter[Help Facilitator]
+      Narrator[Explain Flow]
+    Pain[⚠️ Pain Points]
+      PP1[No Timeboxing]
+      PP2[TO-BE Focus Lost]
+      PP3[Off-Scope]
+      PP4[Wrong Abstraction]
+    Solutions[💡 Solutions]
+      Sol1[Focus Sunny<br/>Scenarios]
+      Sol2[Mix TO-BE<br/>Flows]
+      Sol3[Use<br/>Parking Lot]
+      Sol4[Facilitator<br/>Intervenes]
+```
+
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#fefce8',
+    'primaryTextColor': '#713f12',
+    'primaryBorderColor': '#f59e0b',
+    'lineColor': '#78716c',
+    'secondaryColor': '#fff7ed',
+    'tertiaryColor': '#fef9c3',
+    'background': '#ffffff'
+  }
+}}%%
+
+```mermaid
+graph LR
+    subgraph WORKFLOW["🔄 Event Storming Workflow"]
+        A[Start] --> B[Phase 1:<br/>Chaotic]
+        B --> C[Phase 2:<br/>Timeline]
+        C --> D[Phase 3:<br/>People & Systems]
+        D --> E[Phase 4:<br/>Walkthrough]
+        E --> F[Phase 5:<br/>Problems]
+        F --> G[Phase 6:<br/>Pick Problem]
+        G --> H[End]
+    end
+
+    subgraph TOOLS["🛠️ Tools"]
+        T1[🟡 Domain Events]
+        T2[👤 Actors]
+        T3[🔵 Systems]
+    end
+
+    style A fill:#86efac,stroke:#22c55e,stroke-width:2px
+    style B fill:#fde047,stroke:#eab308,stroke-width:2px
+    style C fill:#bef264,stroke:#84cc16,stroke-width:2px
+    style D fill:#fca5a5,stroke:#ef4444,stroke-width:2px
+    style E fill:#93c5fd,stroke:#3b82f6,stroke-width:2px
+    style F fill:#d1d5db,stroke:#6b7280,stroke-width:2px
+    style G fill:#c4b5fd,stroke:#8b5cf6,stroke-width:2px
+    style H fill:#f9a8d4,stroke:#ec4899,stroke-width:2px
+```
+
+```plantuml
+@startuml EventStormingRoles
+!theme plain
+skinparam backgroundColor #FFFFFF
+skinparam handwritten false
+
+title "Event Storming - Roles & Responsibilities"
+
+package "Out-Box (Methodology)" {
+    [DDD Expert] as Expert
+    [Facilitator] as Facil
+}
+
+package "In-Fight (Business)" {
+    [Domain Expert] as Domain
+    [Business Owner] as Biz
+}
+
+Expert --> Facil: guides process
+Domain --> Biz: validates events
+
+note right of Expert
+  • Explain rules
+  • Guide process
+  • Keep timeboxing
+  • DDD expert
+end note
+
+note right of Domain
+  • Know business
+  • Challenge assumptions
+  • Validate events
+  • Domain expert
+end note
+
+@enduml
+```
+
+```plantuml
+@startuml EventStormingProcess
+!theme plain
+skinparam backgroundColor #FFFFFF
+
+title "Big Picture Event Storming - Process Flow"
+
+start
+
+:Phase 1:
+Chaotic Exploration;
+note right
+  • Domain Events
+  • Add Actors + Systems
+  • Define Domain Event
+  • Use Ubiquitous Language
+end note
+
+:Phase 2:
+Enforcing Timeline;
+note right
+  Find PIVOTAL EVENTS
+  Don't overthink!
+end note
+
+:Phase 3:
+People & Systems;
+note right
+  ⚠️ CRITICAL
+  Most discussion here
+  FACILITATOR: Cut long talks!
+end note
+
+:Phase 4:
+Explicit Walkthrough;
+note right
+  Narrator explains
+  Verify ALL understand
+  Add missing events
+end note
+
+:Phase 5:
+Problems & Opportunities;
+
+:Phase 6:
+Pick Your Problem;
+note right
+  Guide for FUTURE
+  TO-BE decisions
+end note
+
+stop
+
+@enduml
+```
+
+```plantuml
+@startuml EventStormingPainPoints
+!theme plain
+skinparam backgroundColor #FFFFFF
+
+title "Pain Points & Solutions"
+
+package "Pain Points" {
+    rectangle "No Timeboxing" as PP1 #ffd700
+    rectangle "TO-BE Focus Lost" as PP2 #ff6b6b
+    rectangle "Off-Scope" as PP3 #ff69b4
+    rectangle "Wrong Abstraction" as PP4 #9370db
+}
+
+package "Solutions" {
+    rectangle "Focus Sunny Scenarios" as S1 #90ee90
+    rectangle "Mix TO-BE Flows" as S2 #87ceeb
+    rectangle "Use Parking Lot" as S3 #ffa07a
+    rectangle "Facilitator Intervenes" as S4 #dda0dd
+}
+
+PP1 --> S1 : solve
+PP2 --> S2 : solve
+PP3 --> S3 : solve
+PP4 --> S4 : solve
+
+@enduml
 ```
 
 ## สรุป (Summary)
