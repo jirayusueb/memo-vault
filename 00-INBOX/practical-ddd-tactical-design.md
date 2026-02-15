@@ -158,11 +158,6 @@ graph LR
 
 ---
 
-### 5️⃣ Tactical Design Process (PlantUML)
-
-
----
-
 ## สรุป (Summary)
 
 บทความนี้เป็น **Part 3** สุดท้ายของ series Practical DDD ซึ่ง focus ที่ **Tactical Design** - ขั้นตอนการแปลงผลจาก Design Level Event Storming ให้กลายเป็น code จริง

@@ -104,11 +104,6 @@ graph TD
 
 ---
 
-### 4️⃣ Design Level Process (PlantUML)
-
-
----
-
 ## สรุป (Summary)
 
 บทความนี้เป็น **Part 2** ของ series Practical DDD ซึ่ง focus ที่ **Design Level Event Storming** - ขั้นตอนต่อจาก Big Picture Event Storming ที่มุ่ง modeling software system เพื่อการ implement
