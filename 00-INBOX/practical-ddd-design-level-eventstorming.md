@@ -5,22 +5,6 @@ tags: #ddd #eventstorming #design-level #bounded-context #microservices
 date: 2026-02-15
 category: 04-Resources/languages
 
-## 🎨 Theme Configuration
-
-```yaml
-theme: base
-themeVariables:
-  primaryColor: "#faf5ff"
-  primaryTextColor: "#581c87"
-  primaryBorderColor: "#9333ea"
-  lineColor: "#71717a"
-  secondaryColor: "#fff7ed"
-  tertiaryColor: "#f3e8ff"
-  background: "#ffffff"
-  fontSize: "14px"
-```
-
----
 
 ## 📊 Diagrams
 
@@ -155,46 +139,6 @@ graph TD
 
 ### 4️⃣ Design Level Process (PlantUML)
 
-```plantuml
-@startuml DesignLevelEventStorming
-!theme plain
-skinparam backgroundColor #FFFFFF
-
-title "Design Level Event Storming - Process"
-
-start
-
-:Big Picture Event Storming;
-note right
-  Focus: Current Business Flow
-  Output: Domain Events
-end note
-
-:Design Level Event Storming;
-note right
-  Focus: Model Software System
-  Goal: Implementation Design
-end note
-
-:Define Aggregates;
-note right
-  Group related Domain Events
-  Based on business similarity
-  Share same lifecycle
-end note
-
-:Set Boundaries;
-note right
-  Define Bounded Contexts
-  Determine Microservice Scope
-  One MS = Multiple Aggregates
-end note
-
-:Implementation Ready;
-stop
-
-@enduml
-```
 
 ---
 

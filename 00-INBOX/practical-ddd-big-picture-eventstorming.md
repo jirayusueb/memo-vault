@@ -5,25 +5,6 @@ tags: #ddd #eventstorming #domain-driven-design #workshop
 date: 2026-02-15
 category: 04-Resources/languages
 
-## 🎨 Theme Configuration
-
-> 💡 **Copy theme code ไปใช้ใน Obsidian ได้เลยค่ะ**
-
-\`\`\`yaml
-# Mermaid Custom Theme - Blue & Professional
-theme: base
-themeVariables:
-  primaryColor: "#f8fafc"
-  primaryTextColor: "#0f172a"
-  primaryBorderColor: "#3b82f6"
-  lineColor: "#64748b"
-  secondaryColor: "#fefce8"
-  tertiaryColor: "#eff6ff"
-  background: "#ffffff"
-  fontSize: "14px"
-\`\`\`
-
----
 
 %%{init: {
   'theme': 'base',
@@ -201,128 +182,8 @@ graph LR
     style H fill:#f9a8d4,stroke:#ec4899,stroke-width:2px
 ```
 
-```plantuml
-@startuml EventStormingRoles
-!theme plain
-skinparam backgroundColor #FFFFFF
-skinparam handwritten false
 
-title "Event Storming - Roles & Responsibilities"
 
-package "Out-Box (Methodology)" {
-    [DDD Expert] as Expert
-    [Facilitator] as Facil
-}
-
-package "In-Fight (Business)" {
-    [Domain Expert] as Domain
-    [Business Owner] as Biz
-}
-
-Expert --> Facil: guides process
-Domain --> Biz: validates events
-
-note right of Expert
-  • Explain rules
-  • Guide process
-  • Keep timeboxing
-  • DDD expert
-end note
-
-note right of Domain
-  • Know business
-  • Challenge assumptions
-  • Validate events
-  • Domain expert
-end note
-
-@enduml
-```
-
-```plantuml
-@startuml EventStormingProcess
-!theme plain
-skinparam backgroundColor #FFFFFF
-
-title "Big Picture Event Storming - Process Flow"
-
-start
-
-:Phase 1:
-Chaotic Exploration;
-note right
-  • Domain Events
-  • Add Actors + Systems
-  • Define Domain Event
-  • Use Ubiquitous Language
-end note
-
-:Phase 2:
-Enforcing Timeline;
-note right
-  Find PIVOTAL EVENTS
-  Don't overthink!
-end note
-
-:Phase 3:
-People & Systems;
-note right
-  ⚠️ CRITICAL
-  Most discussion here
-  FACILITATOR: Cut long talks!
-end note
-
-:Phase 4:
-Explicit Walkthrough;
-note right
-  Narrator explains
-  Verify ALL understand
-  Add missing events
-end note
-
-:Phase 5:
-Problems & Opportunities;
-
-:Phase 6:
-Pick Your Problem;
-note right
-  Guide for FUTURE
-  TO-BE decisions
-end note
-
-stop
-
-@enduml
-```
-
-```plantuml
-@startuml EventStormingPainPoints
-!theme plain
-skinparam backgroundColor #FFFFFF
-
-title "Pain Points & Solutions"
-
-package "Pain Points" {
-    rectangle "No Timeboxing" as PP1 #ffd700
-    rectangle "TO-BE Focus Lost" as PP2 #ff6b6b
-    rectangle "Off-Scope" as PP3 #ff69b4
-    rectangle "Wrong Abstraction" as PP4 #9370db
-}
-
-package "Solutions" {
-    rectangle "Focus Sunny Scenarios" as S1 #90ee90
-    rectangle "Mix TO-BE Flows" as S2 #87ceeb
-    rectangle "Use Parking Lot" as S3 #ffa07a
-    rectangle "Facilitator Intervenes" as S4 #dda0dd
-}
-
-PP1 --> S1 : solve
-PP2 --> S2 : solve
-PP3 --> S3 : solve
-PP4 --> S4 : solve
-
-@enduml
-```
 
 ## สรุป (Summary)
 

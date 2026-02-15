@@ -5,22 +5,6 @@ tags: #ddd #tactical-design #clean-architecture #aggregates #entities
 date: 2026-02-15
 category: 04-Resources/languages
 
-## 🎨 Theme Configuration
-
-```yaml
-theme: base
-themeVariables:
-  primaryColor: "#f0f9ff"
-  primaryTextColor: "#0c4a6e",
-  primaryBorderColor: "#0ea5e9",
-  lineColor: "#64748b",
-  secondaryColor: "#fef3c7",
-  tertiaryColor: "#e0f2fe",
-  background: "#ffffff"
-  fontSize: "14px"
-```
-
----
 
 ## 📊 Diagrams
 
@@ -220,48 +204,6 @@ graph LR
 
 ### 5️⃣ Tactical Design Process (PlantUML)
 
-```plantuml
-@startuml TacticalDesignProcess
-!theme plain
-skinparam backgroundColor #FFFFFF
-
-title "Tactical Design - Implementation Process"
-
-start
-
-:Design Level Results;
-note right
-  Aggregates defined
-  Microservice boundaries set
-end note
-
-:Design Aggregate Class Model;
-note right
-  Define attributes
-  Decide types (primitive/reference)
-  Entity vs Value Object
-end note
-
-:Implement in Clean Architecture;
-note right
-  Domain layer
-  - entities/
-  - valueobjects/
-  - aggregates/
-end note
-
-:Complete Stack;
-note right
-  Application layer
-  Adapters layer
-  Infrastructure layer
-end note
-
-:Ready for Development;
-stop
-
-@enduml
-```
 
 ---
 
