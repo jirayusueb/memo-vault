@@ -5,7 +5,7 @@ tags: #ddd #eventstorming #domain-driven-design #workshop
 date: 2026-02-15
 category: 04-Resources/languages
 
-![[attachments/practical-ddd-eventstorming-diagram.txt]]
+![[attachments/practical-ddd-eventstorming.excalidraw]]
 
 ```mermaid
 graph TD
