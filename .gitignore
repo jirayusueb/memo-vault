@@ -1,0 +1,8 @@
+# Obsidian
+.obsidian/
+
+# macOS
+.DS_Store
+
+# Attachments (if large)
+attachments/*
