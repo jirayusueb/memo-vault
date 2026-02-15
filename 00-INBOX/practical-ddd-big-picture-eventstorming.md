@@ -5,6 +5,8 @@ tags: #ddd #eventstorming #domain-driven-design #workshop
 date: 2026-02-15
 category: 04-Resources/languages
 
+![[attachments/practical-ddd-eventstorming-diagram.txt]]
+
 ## สรุป (Summary)
 
 บทความนี้แชร์ประสบการณ์จริงเกี่ยวกับ **Domain-Driven Design (DDD)** และ **Big Picture Event Storming** โดยเน้นที่การใช้งานจริงมากกว่าทำตาม theory อย่างเคร่งครัด
