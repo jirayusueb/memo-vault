@@ -7,6 +7,96 @@ category: 04-Resources/languages
 
 ![[attachments/practical-ddd-eventstorming-diagram.txt]]
 
+```mermaid
+graph TD
+    Start([Big Picture Event Storming]) --> P1[Phase 1: Chaotic Exploration]
+
+    P1 --> P1Notes[Notes:
+    • Domain Events time-ordered
+    • Add Actors + Systems immediately
+    • Define Domain Event clearly from START
+    • Use Ubiquitous Language
+    • Accept fragmented timeline]
+
+    P1 --> P2[Phase 2: Enforcing Timeline]
+
+    P2 --> P2Notes[Find PIVOTAL EVENTS<br/>Don't overthink]
+
+    P2 --> P3[Phase 3: People & Systems]
+
+    P3 --> P3Notes[Most BUSINESS DISCUSSION<br/>FACILITATOR must cut long discussions<br/>TIMEBOX critical]
+
+    P3 --> P4[Phase 4: Explicit Walkthrough]
+
+    P4 --> P4Notes[Narrator explains flow<br/>Verify ALL understand<br/>Add missing events ON THE FLY]
+
+    P4 --> P5[Phase 5: Problems & Opportunities]
+
+    P5 --> P6[Phase 6: Pick Your Problem]
+
+    P6 --> P6Notes[Guide for FUTURE<br/>TO-BE decisions]
+
+    style Start fill:#e1f5ff
+    style P1 fill:#fff3cd
+    style P2 fill:#d4edda
+    style P3 fill:#f8d7da
+    style P4 fill:#d1ecf1
+    style P5 fill:#e2e3e5
+    style P6 fill:#cce5ff
+```
+
+```mermaid
+graph LR
+    subgraph ROLES["Roles & Responsibilities"]
+        OutBox[OUT-BOX<br/>Methodology]
+        InFight[IN-FIGHT<br/>Business]
+    end
+
+    OutBox --> OutBoxTasks[• Explain rules<br/>• Guide process<br/>• Keep timeboxing<br/>• DDD expert]
+    InFight --> InFightTasks[• Know business<br/>• Challenge assumptions<br/>• Validate events<br/>• Domain expert]
+
+    subgraph STICKY["Sticky Notes"]
+        D[🟡 Domain Events]
+        A[👤 Actors]
+        S[🔵 Systems]
+        C[⚪ Commands-Optional]
+        P[🟢 Policies-Optional]
+    end
+
+    style OutBox fill:#e3f2fd
+    style InFight fill:#fff3e0
+    style D fill:#fff9c4
+    style A fill:#c8e6c9
+    style S fill:#bbdefb
+```
+
+```mermaid
+mindmap
+  root((Big Picture<br/>Event Storming))
+    Phases
+      P1(Phase 1<br/>Chaotic Exploration)
+      P2(Phase 2<br/>Timeline)
+      P3(Phase 3<br/>People & Systems)
+      P4(Phase 4<br/>Walkthrough)
+      P5(Phase 5<br/>Problems)
+      P6(Phase 6<br/>Pick Problem)
+    Roles
+      Facilitator(DDD Expert<br/>Out-Box)
+      Business(Domain Expert<br/>In-Fight)
+      Supporter(Help Facilitator)
+      Narrator(Explain Flow)
+    Pain Points
+      PP1(No Timeboxing)
+      PP2(TO-BE Focus Lost)
+      PP3(Off-Scope)
+      PP4(Wrong Abstraction)
+    Solutions
+      Sol1(Focus Sunny Scenarios)
+      Sol2(Mix TO-BE Flows)
+      Sol3(Use Parking Lot)
+      Sol4(Facilitator Intervenes)
+```
+
 ## สรุป (Summary)
 
 บทความนี้แชร์ประสบการณ์จริงเกี่ยวกับ **Domain-Driven Design (DDD)** และ **Big Picture Event Storming** โดยเน้นที่การใช้งานจริงมากกว่าทำตาม theory อย่างเคร่งครัด
